@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Wiki web de _XavierCodes_ Mod's para MCA Social Expansion y MCA Expressions."
+    >
+    <title>_XavierCodes_ Mod's Wiki</title>
+    <link rel="icon" href="assets/smartphone.png">
+    <link rel="stylesheet" href="styles.css?v=6">
+    <script src="script.js?v=4" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio" data-i18n-label="brand.homeAria">
+        <span class="brand-icon">
+          <img src="assets/smartphone.png" alt="">
+        </span>
+        <span>
+          <strong data-i18n="brand.title">_XavierCodes_ Mod's</strong>
+          <small data-i18n="brand.subtitle">MCA Social Expansion / Expressions</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="header-panel" aria-expanded="false" aria-label="Abrir menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+
+      <div class="header-panel" id="header-panel">
+        <nav class="main-nav" aria-label="Secciones de la wiki" data-i18n-label="nav.aria">
+          <a href="#mods" data-i18n="nav.mods">Mods</a>
+          <a href="#interfaces" data-i18n="nav.interfaces">Interfaces</a>
+          <a href="#sistemas" data-i18n="nav.systems">Sistemas</a>
+          <a href="#acciones" data-i18n="nav.actions">Acciones</a>
+          <a href="#recetas" data-i18n="nav.recipes">Recetas</a>
+          <a href="#instalacion" data-i18n="nav.install">Instalacion</a>
+        </nav>
+
+        <div class="header-actions" aria-label="Preferencias" data-i18n-label="controls.aria">
+          <div class="language-control" id="language-control">
+            <span class="control-label" data-i18n="controls.language">Idioma</span>
+            <button class="language-toggle" id="language-toggle" type="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Seleccionar idioma" data-i18n-label="controls.languageAria">
+              <span data-language-label>Español</span>
+              <span class="dropdown-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="language-menu" id="language-menu" role="listbox" aria-label="Seleccionar idioma" data-i18n-label="controls.languageAria">
+              <button type="button" role="option" data-language-option="es" aria-selected="true" data-i18n="language.es">Español</button>
+              <button type="button" role="option" data-language-option="en" aria-selected="false" data-i18n="language.en">English</button>
+            </div>
+          </div>
+
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">
+            <span class="theme-icon" aria-hidden="true"></span>
+            <span data-theme-label>Modo claro</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section" id="inicio">
+        <div class="hero-content">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Wiki comunitaria para Minecraft Comes Alive</p>
+          <h1>_XavierCodes_ Mod's</h1>
+          <p class="hero-text" data-i18n="hero.text">
+            Base de documentacion para ambos mods: sistemas sociales, interfaces,
+            recetas, gestos, requisitos y tablas utiles para jugadores y modders.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#mods" data-i18n="hero.mods">Ver mods</a>
+            <a class="button button-secondary" href="#recetas" data-i18n="hero.recipes">Ver recetas</a>
+          </div>
+        </div>
+
+        <aside class="hero-banner" aria-label="Espacio para imagen de banner" data-i18n-label="hero.bannerAria">
+          <div class="banner-photo">
+            <img class="banner-image" src="assets/banner-image.jpg" alt="Banner de MCA Social Expansion" data-i18n-alt="hero.bannerAlt">
+          </div>
+          <div class="banner-items" aria-label="Objetos principales" data-i18n-label="hero.itemsAria">
+            <img src="assets/smartphone.png" alt="Social Smartphone">
+            <img src="assets/crystal.png" alt="Crystal Social">
+            <img src="assets/letter.png" alt="Letter Social">
+          </div>
+        </aside>
+      </section>
+
+      <section class="section" id="mods">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="mods.eyebrow">Ambos mods</p>
+          <h2 data-i18n="mods.title">Ficha rapida</h2>
+        </div>
+
+        <div class="mod-grid">
+          <article class="card">
+            <div class="tag-row">
+              <span class="tag tag-gold">1.20.1 Forge</span>
+              <span class="tag tag-primary">1.21.1 NeoForge</span>
+              <span class="tag tag-blue">1.21.1 Fabric</span>
+            </div>
+            <h3>MCA Social Expansion</h3>
+            <p data-i18n="mods.social.description">
+              Expande las relaciones de MCA con afinidad, romance, confianza,
+              contactos, regalos, humor y conversaciones por interfaz.
+            </p>
+            <dl class="details">
+              <div>
+                <dt>Mod ID</dt>
+                <dd>mcasocial</dd>
+              </div>
+              <div>
+                <dt data-i18n="common.version">Version</dt>
+                <dd>0.7.1</dd>
+              </div>
+            </dl>
+            <ul class="check-list">
+              <li data-i18n="mods.social.fact1">Tres interfaces sociales: Smartphone, Crystal Social y Letter Social.</li>
+              <li data-i18n="mods.social.fact2">Sistema de afinidad, romance, confianza, fatiga social y roles familiares.</li>
+              <li data-i18n="mods.social.fact3">Contactos, mensajes remotos, regalos, humor y acciones de amistad.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <span class="tag tag-rose" data-i18n="common.soon">Proximamente</span>
+            <h3>MCA Expressions</h3>
+            <dl class="details">
+              <div>
+                <dt>Mod ID</dt>
+                <dd>mcaexpressions</dd>
+              </div>
+              <div>
+                <dt data-i18n="common.version">Version</dt>
+                <dd>0.1</dd>
+              </div>
+            </dl>
+            <p class="coming-note" data-i18n="mods.expressions.soon">Proximamente...</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="interfaces">
+        <div class="section-heading">
+          <p class="eyebrow">MCA Social Expansion</p>
+          <h2 data-i18n="interfaces.title">Interfaces y objetos</h2>
+          <p data-i18n="interfaces.text">
+            Los tres objetos comparten el sistema social, pero cada uno comunica
+            una fantasia visual distinta.
+          </p>
+        </div>
+
+        <div class="interface-grid">
+          <article class="interface-card">
+            <div class="interface-art">
+              <img class="ui-preview" src="assets/smartphone-ui.png" alt="Interfaz de Social Smartphone" data-i18n-alt="interfaces.phone.alt">
+              <img class="item-preview" src="assets/smartphone.png" alt="">
+            </div>
+            <div class="interface-copy">
+              <h3>Social Smartphone</h3>
+              <p data-i18n="interfaces.phone.text">Interfaz moderna tipo app para contactos y conversaciones remotas.</p>
+              <ul class="check-list">
+                <li data-i18n="interfaces.phone.fact1">Permite revisar aldeanos conocidos desde una pantalla compacta.</li>
+                <li data-i18n="interfaces.phone.fact2">Ordena contactos por amistad, romance y familia.</li>
+                <li data-i18n="interfaces.phone.fact3">Funciona como centro principal para mensajes y acciones sociales.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="interface-card">
+            <div class="interface-art">
+              <img class="ui-preview" src="assets/crystal-ui.png" alt="Interfaz de Crystal Social" data-i18n-alt="interfaces.crystal.alt">
+              <img class="item-preview" src="assets/crystal.png" alt="">
+            </div>
+            <div class="interface-copy">
+              <h3>Crystal Social</h3>
+              <p data-i18n="interfaces.crystal.text">Interfaz magica para abrir el sistema social con estetica de cristal.</p>
+              <ul class="check-list">
+                <li data-i18n="interfaces.crystal.fact1">Presenta una variante visual del canal remoto Crystal.</li>
+                <li data-i18n="interfaces.crystal.fact2">Mantiene acceso a contactos, amistad y relacion.</li>
+                <li data-i18n="interfaces.crystal.fact3">Da una experiencia mas mistica sin cambiar el sistema social.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="interface-card">
+            <div class="interface-art">
+              <img class="ui-preview" src="assets/letter-ui.png" alt="Interfaz de Letter Social" data-i18n-alt="interfaces.letter.alt">
+              <img class="item-preview" src="assets/letter.png" alt="">
+            </div>
+            <div class="interface-copy">
+              <h3>Letter Social</h3>
+              <p data-i18n="interfaces.letter.text">Interfaz de carta para una experiencia mas narrativa y clasica.</p>
+              <ul class="check-list">
+                <li data-i18n="interfaces.letter.fact1">Convierte la comunicacion social en una vista escrita.</li>
+                <li data-i18n="interfaces.letter.fact2">Usa un estilo de papel para separar su identidad del telefono.</li>
+                <li data-i18n="interfaces.letter.fact3">Funciona como alternativa visual para contactos y relaciones.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="sistemas">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="systems.eyebrow">Reglas sociales</p>
+          <h2 data-i18n="systems.title">Sistemas principales</h2>
+        </div>
+
+        <div class="system-grid">
+          <article class="mini-card">
+            <span>0-100+</span>
+            <h3 data-i18n="systems.affinity.title">Afinidad</h3>
+            <p data-i18n="systems.affinity.text">Sube con saludos, bromas, elogios, apoyo, historias, acciones familiares y humor.</p>
+          </article>
+          <article class="mini-card">
+            <span>10+</span>
+            <h3 data-i18n="systems.romance.title">Romance</h3>
+            <p data-i18n="systems.romance.text">El coqueteo exige afinidad minima y las acciones romanticas avanzan por umbrales.</p>
+          </article>
+          <article class="mini-card">
+            <span>25 / 50</span>
+            <h3 data-i18n="systems.trust.title">Confianza</h3>
+            <p data-i18n="systems.trust.text">Desbloquea opciones profundas para bebes, menores, adolescentes y familiares adultos.</p>
+          </article>
+          <article class="mini-card">
+            <span>Cooldowns</span>
+            <h3 data-i18n="systems.fatigue.title">Fatiga social</h3>
+            <p data-i18n="systems.fatigue.text">Repetir acciones demasiado rapido genera respuestas neutrales, hartazgo y bloqueos.</p>
+          </article>
+          <article class="mini-card">
+            <span data-i18n="systems.personality.value">8 rasgos</span>
+            <h3 data-i18n="systems.personality.title">Personalidad</h3>
+            <p data-i18n="systems.personality.text">Extrovertido, timido, ambicioso, chismoso, orgulloso, leal, sarcastico y romantico.</p>
+          </article>
+          <article class="mini-card">
+            <span data-i18n="systems.roles.value">Familia</span>
+            <h3 data-i18n="systems.roles.title">Roles</h3>
+            <p data-i18n="systems.roles.text">Distingue bebes, ninos, adolescentes, familiares adultos y conyuges.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="acciones">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="actions.eyebrow">Tablas de juego</p>
+          <h2 data-i18n="actions.title">Acciones documentadas</h2>
+          <p data-i18n="actions.text">Datos iniciales extraidos de los archivos locales de los mods.</p>
+        </div>
+
+        <div class="split-grid">
+          <article class="card">
+            <h3 data-i18n="actions.base.title">Acciones base</h3>
+            <div class="info-list">
+              <div><strong data-i18n="actions.base.greet.name">Saludar</strong><span data-i18n="actions.base.greet.value">+3 afinidad</span><p data-i18n="actions.base.greet.text">Base de conversacion con respuestas por personalidad.</p></div>
+              <div><strong data-i18n="actions.base.joke.name">Bromear</strong><span data-i18n="actions.base.joke.value">+6 aprox.</span><p data-i18n="actions.base.joke.text">Mejor con extrovertidos o chismosos.</p></div>
+              <div><strong data-i18n="actions.base.praise.name">Elogiar</strong><span data-i18n="actions.base.praise.value">+9 aprox.</span><p data-i18n="actions.base.praise.text">Muy efectivo con romanticos y orgullosos.</p></div>
+              <div><strong data-i18n="actions.base.insult.name">Insultar</strong><span data-i18n="actions.base.insult.value">Negativo</span><p data-i18n="actions.base.insult.text">Baja afinidad y puede afectar corazones MCA.</p></div>
+              <div><strong data-i18n="actions.base.flirt.name">Coquetear</strong><span data-i18n="actions.base.flirt.value">+12 romance</span><p data-i18n="actions.base.flirt.text">Requiere al menos 10 de afinidad.</p></div>
+              <div><strong data-i18n="actions.base.gift.name">Regalar</strong><span data-i18n="actions.base.gift.value">Variable</span><p data-i18n="actions.base.gift.text">Evalua gustos, favoritos y regalos repetidos.</p></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3 data-i18n="actions.friendship.title">Amistad y matrimonio</h3>
+            <div class="info-list">
+              <div><strong data-i18n="actions.friendship.greet.name">Saludar por amistad</strong><span>+2</span><p data-i18n="actions.friendship.greet.text">Abre contacto con una respuesta conversacional.</p></div>
+              <div><strong data-i18n="actions.friendship.day.name">Preguntar por su dia</strong><span>+4 a +5</span><p data-i18n="actions.friendship.day.text">Mejor para timidos, leales y romanticos.</p></div>
+              <div><strong data-i18n="actions.friendship.gossip.name">Chismear</strong><span>-1 a +8</span><p data-i18n="actions.friendship.gossip.text">Muy fuerte con chismosos; puede caer mal a leales.</p></div>
+              <div><strong data-i18n="actions.friendship.story.name">Contar anecdota</strong><span>+4 a +6</span><p data-i18n="actions.friendship.story.text">Funciona bien con extrovertidos y sarcasticos.</p></div>
+              <div><strong data-i18n="actions.friendship.support.name">Dar apoyo</strong><span>+4 a +7</span><p data-i18n="actions.friendship.support.text">Brilla con timidos, leales y romanticos.</p></div>
+              <div><strong data-i18n="actions.friendship.vows.name">Recordar votos</strong><span>+8</span><p data-i18n="actions.friendship.vows.text">Solo conyuge.</p></div>
+            </div>
+          </article>
+        </div>
+
+        <article class="table-card">
+          <div class="table-heading">
+            <h3 data-i18n="actions.romance.title">Romance</h3>
+            <p data-i18n="actions.romance.text">Acciones con probabilidad, requisito minimo y cooldown por uso.</p>
+          </div>
+          <div class="responsive-table">
+            <table>
+              <thead>
+                <tr>
+                  <th data-i18n="table.action">Accion</th>
+                  <th data-i18n="table.points">Puntos</th>
+                  <th data-i18n="table.requirement">Requisito</th>
+                  <th data-i18n="table.success">Exito</th>
+                  <th>Cooldown</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td data-i18n="romance.flatter">Halagar con intencion</td><td data-i18n="romance.points4">Romance +4</td><td data-i18n="romance.reqAffinity10">Afinidad 10</td><td>75%</td><td data-i18n="time.4min">4 min</td></tr>
+                <tr><td data-i18n="romance.softFlirt">Coquetear suavemente</td><td data-i18n="romance.points5">Romance +5</td><td data-i18n="romance.reqAffinity10">Afinidad 10</td><td>65%</td><td data-i18n="time.5min">5 min</td></tr>
+                <tr><td data-i18n="romance.confess">Confesar interes</td><td data-i18n="romance.points7">Romance +7</td><td data-i18n="romance.req25">Romance 25</td><td>65%</td><td data-i18n="time.6min">6 min</td></tr>
+                <tr><td data-i18n="romance.hand">Tomar la mano</td><td data-i18n="romance.points5">Romance +5</td><td data-i18n="romance.req25">Romance 25</td><td>72%</td><td data-i18n="time.4min">4 min</td></tr>
+                <tr><td data-i18n="romance.hug">Abrazar</td><td data-i18n="romance.points6">Romance +6</td><td data-i18n="romance.req50">Romance 50</td><td>78%</td><td data-i18n="time.4min">4 min</td></tr>
+                <tr><td data-i18n="romance.kiss">Besar</td><td data-i18n="romance.points8">Romance +8</td><td data-i18n="romance.req50">Romance 50</td><td>68%</td><td data-i18n="time.6min">6 min</td></tr>
+                <tr><td data-i18n="romance.love">Decir te quiero</td><td data-i18n="romance.points7">Romance +7</td><td data-i18n="romance.req75">Romance 75</td><td>85%</td><td data-i18n="time.5min">5 min</td></tr>
+                <tr><td data-i18n="romance.date">Proponer una cita</td><td data-i18n="romance.points6">Romance +6</td><td data-i18n="romance.req75">Romance 75</td><td>82%</td><td data-i18n="time.6min">6 min</td></tr>
+                <tr><td data-i18n="romance.firstDate">Recordar primera cita</td><td data-i18n="romance.points7">Romance +7</td><td data-i18n="romance.spouse">Conyuge</td><td>95%</td><td data-i18n="time.4min">4 min</td></tr>
+                <tr><td data-i18n="romance.spouseKiss">Beso de conyuge</td><td data-i18n="romance.points8">Romance +8</td><td data-i18n="romance.spouse">Conyuge</td><td>96%</td><td data-i18n="time.5min">5 min</td></tr>
+                <tr><td data-i18n="romance.reaffirm">Reafirmar el amor</td><td data-i18n="romance.points8">Romance +8</td><td data-i18n="romance.spouse">Conyuge</td><td>97%</td><td data-i18n="time.6min">6 min</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <div class="split-grid">
+          <article class="card">
+            <h3 data-i18n="actions.affection.title">Carino familiar</h3>
+            <div class="info-list">
+              <div><strong data-i18n="actions.affection.baby.name">Bebe</strong><span>+3 a +4</span><p data-i18n="actions.affection.baby.text">Hacer reir, arrullar, mimar y cantar.</p></div>
+              <div><strong data-i18n="actions.affection.child.name">Nino</strong><span>+3 a +5</span><p data-i18n="actions.affection.child.text">Preguntar por su dia, contar cuento, consolar y expresar orgullo.</p></div>
+              <div><strong data-i18n="actions.affection.teen.name">Adolescente</strong><span>+3 a +5</span><p data-i18n="actions.affection.teen.text">Escuchar, aconsejar y mostrar confianza.</p></div>
+              <div><strong data-i18n="actions.affection.adult.name">Familiar adulto</strong><span>+3 a +5</span><p data-i18n="actions.affection.adult.text">Recordar infancia, apoyar y decir que estas orgulloso.</p></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3 data-i18n="actions.humor.title">Humor</h3>
+            <div class="humor-grid">
+              <div><strong data-i18n="humor.annoy">Fastidiar</strong><span data-i18n="humor.affinity3">+3 afinidad</span><small data-i18n="humor.annoy.meta">62% exito - 3 min</small></div>
+              <div><strong data-i18n="humor.entertain">Entretener</strong><span data-i18n="humor.affinity5">+5 afinidad</span><small data-i18n="humor.entertain.meta">78% exito - 4 min</small></div>
+              <div><strong data-i18n="humor.silly">Ser tonto</strong><span data-i18n="humor.affinity4">+4 afinidad</span><small data-i18n="humor.silly.meta">72% exito - 3.5 min</small></div>
+              <div><strong data-i18n="humor.joke">Contar chiste</strong><span data-i18n="humor.affinity4">+4 afinidad</span><small data-i18n="humor.joke.meta">70% exito - 3 min</small></div>
+              <div><strong data-i18n="humor.imitate">Imitar</strong><span data-i18n="humor.affinity4">+4 afinidad</span><small data-i18n="humor.imitate.meta">66% exito - 4 min</small></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section expressions-coming" id="expressions">
+        <div class="section-heading">
+          <p class="eyebrow">MCA Expressions</p>
+          <h2 data-i18n="expressions.title">MCA Expressions</h2>
+          <p class="coming-title" data-i18n="expressions.soon">Proximamente...</p>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="recetas">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="recipes.eyebrow">Crafteo</p>
+          <h2 data-i18n="recipes.title">Recetas</h2>
+        </div>
+
+        <div class="recipe-grid">
+          <article class="recipe-card">
+            <div class="recipe-title">
+              <img src="assets/smartphone.png" alt="">
+              <div>
+                <h3>Social Smartphone</h3>
+                <p data-i18n="recipes.craftingTable">Mesa de crafteo</p>
+              </div>
+            </div>
+            <img class="craft-image" src="assets/craft-smartphone.png" alt="Receta de Social Smartphone" data-i18n-alt="recipes.phone.alt">
+            <ul class="check-list">
+              <li data-i18n="recipes.iron">I = Lingote de hierro</li>
+              <li data-i18n="recipes.glass">G = Panel de vidrio</li>
+              <li data-i18n="recipes.redstone">R = Redstone</li>
+            </ul>
+          </article>
+
+          <article class="recipe-card">
+            <div class="recipe-title">
+              <img src="assets/crystal.png" alt="">
+              <div>
+                <h3>Crystal Social</h3>
+                <p data-i18n="recipes.craftingTable">Mesa de crafteo</p>
+              </div>
+            </div>
+            <img class="craft-image" src="assets/craft-crystal.png" alt="Receta de Crystal Social" data-i18n-alt="recipes.crystal.alt">
+            <ul class="check-list">
+              <li data-i18n="recipes.diamond">D = Diamante</li>
+              <li data-i18n="recipes.amethyst">A = Fragmento de amatista</li>
+              <li data-i18n="recipes.ender">E = Perla de ender</li>
+            </ul>
+          </article>
+
+          <article class="recipe-card">
+            <div class="recipe-title">
+              <img src="assets/letter.png" alt="">
+              <div>
+                <h3>Letter Social</h3>
+                <p data-i18n="recipes.shapeless">Receta sin forma</p>
+              </div>
+            </div>
+            <img class="craft-image" src="assets/craft-letter.png" alt="Receta de Letter Social" data-i18n-alt="recipes.letter.alt">
+            <ul class="check-list">
+              <li data-i18n="recipes.leather">L = Cuero</li>
+              <li data-i18n="recipes.paper">P = Papel x4</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="instalacion">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="install.eyebrow">Repositorio</p>
+          <h2 data-i18n="install.title">Instalacion y compatibilidad</h2>
+        </div>
+
+        <div class="compat-list">
+          <div><strong>Minecraft</strong><span data-i18n="install.minecraft">1.20.1 para las versiones Forge detectadas</span></div>
+          <div><strong>Forge</strong><span>47.x</span></div>
+          <div><strong>MCA Reborn</strong><span data-i18n="install.mca">7.7.1-alpha.1 o superior</span></div>
+          <div><strong>Architectury</strong><span data-i18n="install.architectury">9.2.14 o superior para MCA Expressions</span></div>
+          <div><strong data-i18n="install.optional">Integraciones opcionales</strong><span>MCA Quests 1.1.0, MCA Conversations 1.0.0, Townstead 0.7.6</span></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p data-i18n="footer.text">_XavierCodes_ Mod's - MCA Social Expansion / Expressions</p>
+    </footer>
+  </body>
+</html>
