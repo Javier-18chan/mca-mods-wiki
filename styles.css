@@ -519,6 +519,22 @@ html[data-theme="dark"] .theme-icon::after {
   line-height: 1.7;
 }
 
+.subsection-heading {
+  max-width: 760px;
+  margin: 36px 0 22px;
+}
+
+.subsection-heading h3 {
+  font-size: 1.45rem;
+  line-height: 1.2;
+}
+
+.subsection-heading p {
+  margin-top: 10px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
 .mod-grid,
 .interface-grid,
 .system-grid,

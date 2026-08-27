@@ -9,8 +9,8 @@
     >
     <title>_XavierCodes_ Mod's Wiki</title>
     <link rel="icon" href="assets/smartphone.png">
-    <link rel="stylesheet" href="styles.css?v=8">
-    <script src="script.js?v=6" defer></script>
+    <link rel="stylesheet" href="styles.css?v=9">
+    <script src="script.js?v=7" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -33,11 +33,8 @@
       <div class="header-panel" id="header-panel">
         <nav class="main-nav" aria-label="Secciones de la wiki" data-i18n-label="nav.aria">
           <a href="#mods" data-i18n="nav.mods">Mods</a>
-          <a href="#interfaces" data-i18n="nav.interfaces">Interfaces</a>
-          <a href="#sistemas" data-i18n="nav.systems">Sistemas</a>
-          <a href="#acciones" data-i18n="nav.actions">Acciones</a>
-          <a href="#expressions" data-i18n="nav.expressions">Expressions</a>
-          <a href="#recetas" data-i18n="nav.recipes">Recetas</a>
+          <a href="#social-expansion" data-i18n="nav.social">MCA Social Expansion</a>
+          <a href="#expressions" data-i18n="nav.expressions">MCA Expressions</a>
           <a href="#instalacion" data-i18n="nav.install">Instalacion</a>
         </nav>
 
@@ -167,10 +164,18 @@
         </div>
       </section>
 
-      <section class="section section-alt" id="interfaces">
+      <section class="section section-alt" id="social-expansion">
         <div class="section-heading">
           <p class="eyebrow">MCA Social Expansion</p>
-          <h2 data-i18n="interfaces.title">Interfaces y objetos</h2>
+          <h2 data-i18n="social.title">MCA Social Expansion</h2>
+          <p data-i18n="social.text">
+            Este bloque concentra todo lo que pertenece al mod Social Expansion:
+            interfaces, sistemas, acciones sociales y recetas.
+          </p>
+        </div>
+
+        <div class="subsection-heading" id="interfaces">
+          <h3 data-i18n="interfaces.title">Interfaces y objetos</h3>
           <p data-i18n="interfaces.text">
             Los tres objetos comparten el sistema social, pero cada uno comunica
             una fantasia visual distinta.
@@ -230,8 +235,8 @@
 
       <section class="section" id="sistemas">
         <div class="section-heading">
-          <p class="eyebrow" data-i18n="systems.eyebrow">Reglas sociales</p>
-          <h2 data-i18n="systems.title">Sistemas principales</h2>
+          <p class="eyebrow" data-i18n="systems.eyebrow">MCA Social Expansion</p>
+          <h2 data-i18n="systems.title">Sistemas de Social Expansion</h2>
         </div>
 
         <div class="system-grid">
@@ -270,9 +275,9 @@
 
       <section class="section section-alt" id="acciones">
         <div class="section-heading">
-          <p class="eyebrow" data-i18n="actions.eyebrow">Tablas de juego</p>
-          <h2 data-i18n="actions.title">Acciones documentadas</h2>
-          <p data-i18n="actions.text">Datos iniciales extraidos de los archivos locales de los mods.</p>
+          <p class="eyebrow" data-i18n="actions.eyebrow">MCA Social Expansion</p>
+          <h2 data-i18n="actions.title">Acciones de Social Expansion</h2>
+          <p data-i18n="actions.text">Datos del sistema social extraidos de los archivos locales del mod.</p>
         </div>
 
         <div class="split-grid">
@@ -358,7 +363,63 @@
         </div>
       </section>
 
-      <section class="section expressions-section" id="expressions">
+      <section class="section" id="recetas">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="recipes.eyebrow">MCA Social Expansion</p>
+          <h2 data-i18n="recipes.title">Recetas de Social Expansion</h2>
+        </div>
+
+        <div class="recipe-grid">
+          <article class="recipe-card">
+            <div class="recipe-title">
+              <img src="assets/smartphone.png" alt="">
+              <div>
+                <h3>Social Smartphone</h3>
+                <p data-i18n="recipes.craftingTable">Mesa de crafteo</p>
+              </div>
+            </div>
+            <img class="craft-image" src="assets/craft-smartphone.png" alt="Receta de Social Smartphone" data-i18n-alt="recipes.phone.alt">
+            <ul class="check-list">
+              <li data-i18n="recipes.iron">I = Lingote de hierro</li>
+              <li data-i18n="recipes.glass">G = Panel de vidrio</li>
+              <li data-i18n="recipes.redstone">R = Redstone</li>
+            </ul>
+          </article>
+
+          <article class="recipe-card">
+            <div class="recipe-title">
+              <img src="assets/crystal.png" alt="">
+              <div>
+                <h3>Crystal Social</h3>
+                <p data-i18n="recipes.craftingTable">Mesa de crafteo</p>
+              </div>
+            </div>
+            <img class="craft-image" src="assets/craft-crystal.png" alt="Receta de Crystal Social" data-i18n-alt="recipes.crystal.alt">
+            <ul class="check-list">
+              <li data-i18n="recipes.diamond">D = Diamante</li>
+              <li data-i18n="recipes.amethyst">A = Fragmento de amatista</li>
+              <li data-i18n="recipes.ender">E = Perla de ender</li>
+            </ul>
+          </article>
+
+          <article class="recipe-card">
+            <div class="recipe-title">
+              <img src="assets/letter.png" alt="">
+              <div>
+                <h3>Letter Social</h3>
+                <p data-i18n="recipes.shapeless">Receta sin forma</p>
+              </div>
+            </div>
+            <img class="craft-image" src="assets/craft-letter.png" alt="Receta de Letter Social" data-i18n-alt="recipes.letter.alt">
+            <ul class="check-list">
+              <li data-i18n="recipes.leather">L = Cuero</li>
+              <li data-i18n="recipes.paper">P = Papel x4</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-alt expressions-section" id="expressions">
         <div class="section-heading">
           <p class="eyebrow">MCA Expressions</p>
           <h2 data-i18n="expressions.title">MCA Expressions v0.1</h2>
@@ -452,62 +513,6 @@
               <div><strong>MCA Social Expansion</strong><span>0.7+</span><p data-i18n="expressions.compat.social">Integracion opcional: si esta instalado, usa sus personalidades sociales para variar dialogos.</p></div>
               <div><strong data-i18n="expressions.compat.limits.name">Restricciones</strong><span data-i18n="expressions.compat.limits.value">Edad / dwarfism</span><p data-i18n="expressions.compat.limits.text">Las animaciones no aplican a bebes; el abrazo es solo para adultos y aun no esta adaptado a dwarfism.</p></div>
             </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section section-alt" id="recetas">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="recipes.eyebrow">Crafteo</p>
-          <h2 data-i18n="recipes.title">Recetas</h2>
-        </div>
-
-        <div class="recipe-grid">
-          <article class="recipe-card">
-            <div class="recipe-title">
-              <img src="assets/smartphone.png" alt="">
-              <div>
-                <h3>Social Smartphone</h3>
-                <p data-i18n="recipes.craftingTable">Mesa de crafteo</p>
-              </div>
-            </div>
-            <img class="craft-image" src="assets/craft-smartphone.png" alt="Receta de Social Smartphone" data-i18n-alt="recipes.phone.alt">
-            <ul class="check-list">
-              <li data-i18n="recipes.iron">I = Lingote de hierro</li>
-              <li data-i18n="recipes.glass">G = Panel de vidrio</li>
-              <li data-i18n="recipes.redstone">R = Redstone</li>
-            </ul>
-          </article>
-
-          <article class="recipe-card">
-            <div class="recipe-title">
-              <img src="assets/crystal.png" alt="">
-              <div>
-                <h3>Crystal Social</h3>
-                <p data-i18n="recipes.craftingTable">Mesa de crafteo</p>
-              </div>
-            </div>
-            <img class="craft-image" src="assets/craft-crystal.png" alt="Receta de Crystal Social" data-i18n-alt="recipes.crystal.alt">
-            <ul class="check-list">
-              <li data-i18n="recipes.diamond">D = Diamante</li>
-              <li data-i18n="recipes.amethyst">A = Fragmento de amatista</li>
-              <li data-i18n="recipes.ender">E = Perla de ender</li>
-            </ul>
-          </article>
-
-          <article class="recipe-card">
-            <div class="recipe-title">
-              <img src="assets/letter.png" alt="">
-              <div>
-                <h3>Letter Social</h3>
-                <p data-i18n="recipes.shapeless">Receta sin forma</p>
-              </div>
-            </div>
-            <img class="craft-image" src="assets/craft-letter.png" alt="Receta de Letter Social" data-i18n-alt="recipes.letter.alt">
-            <ul class="check-list">
-              <li data-i18n="recipes.leather">L = Cuero</li>
-              <li data-i18n="recipes.paper">P = Papel x4</li>
-            </ul>
           </article>
         </div>
       </section>

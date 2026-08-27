@@ -13,13 +13,10 @@ Web estatica para documentar **MCA Social Expansion** y **MCA Expressions**.
 
 Abre `index.html` en el navegador o publica la carpeta completa con GitHub Pages.
 
-## Contenido inicial
+## Contenido
 
 - Fichas rapidas de ambos mods.
-- Interfaces y objetos principales.
-- Sistemas de afinidad, romance, confianza, fatiga social, personalidad y roles.
-- Acciones base, amistad, romance, carino familiar y humor.
+- Bloque de MCA Social Expansion con interfaces, sistemas, acciones sociales y recetas.
 - Seccion de MCA Expressions v0.1 con ficha tecnica, gestos, reglas de uso y compatibilidad.
-- Recetas con imagenes y compatibilidad.
 - Selector de idioma español/ingles.
 - Modo claro/oscuro seleccionable.
