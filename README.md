@@ -1,6 +1,6 @@
 # _XavierCodes_ Mod's Wiki
 
-Web estatica para documentar **MCA Social Expansion** y preparar la seccion de **MCA Expressions**.
+Web estatica para documentar **MCA Social Expansion** y **MCA Expressions**.
 
 ## Estructura
 
@@ -19,7 +19,7 @@ Abre `index.html` en el navegador o publica la carpeta completa con GitHub Pages
 - Interfaces y objetos principales.
 - Sistemas de afinidad, romance, confianza, fatiga social, personalidad y roles.
 - Acciones base, amistad, romance, carino familiar y humor.
-- Seccion de MCA Expressions marcada como proximamente.
+- Seccion de MCA Expressions v0.1 con ficha tecnica, gestos, reglas de uso y compatibilidad.
 - Recetas con imagenes y compatibilidad.
 - Selector de idioma español/ingles.
 - Modo claro/oscuro seleccionable.

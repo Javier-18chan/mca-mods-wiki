@@ -640,12 +640,6 @@ html[data-theme="dark"] .tag-rose {
   margin-top: 10px;
 }
 
-.coming-note {
-  color: var(--rose);
-  font-size: 1.05rem;
-  font-weight: 850;
-}
-
 .details {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -867,19 +861,6 @@ tbody tr:last-child td {
 .humor-grid small {
   color: var(--muted);
   line-height: 1.45;
-}
-
-.expressions-coming .section-heading {
-  max-width: none;
-  margin-bottom: 0;
-  text-align: center;
-}
-
-.coming-title {
-  color: var(--rose);
-  font-size: 2.8rem;
-  font-weight: 900;
-  line-height: 1.08;
 }
 
 .recipe-title {
@@ -1158,7 +1139,4 @@ tbody tr:last-child td {
     grid-template-columns: 1fr;
   }
 
-  .coming-title {
-    font-size: 2.1rem;
-  }
 }

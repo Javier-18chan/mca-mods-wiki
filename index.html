@@ -9,8 +9,8 @@
     >
     <title>_XavierCodes_ Mod's Wiki</title>
     <link rel="icon" href="assets/smartphone.png">
-    <link rel="stylesheet" href="styles.css?v=7">
-    <script src="script.js?v=5" defer></script>
+    <link rel="stylesheet" href="styles.css?v=8">
+    <script src="script.js?v=6" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -36,6 +36,7 @@
           <a href="#interfaces" data-i18n="nav.interfaces">Interfaces</a>
           <a href="#sistemas" data-i18n="nav.systems">Sistemas</a>
           <a href="#acciones" data-i18n="nav.actions">Acciones</a>
+          <a href="#expressions" data-i18n="nav.expressions">Expressions</a>
           <a href="#recetas" data-i18n="nav.recipes">Recetas</a>
           <a href="#instalacion" data-i18n="nav.install">Instalacion</a>
         </nav>
@@ -127,8 +128,15 @@
           </article>
 
           <article class="card">
-            <span class="tag tag-rose" data-i18n="common.soon">Proximamente</span>
+            <div class="tag-row">
+              <span class="tag tag-gold">1.20.1 Forge</span>
+              <span class="tag tag-primary" data-i18n="mods.expressions.tagAddon">Addon de MCA Reborn</span>
+            </div>
             <h3>MCA Expressions</h3>
+            <p data-i18n="mods.expressions.description">
+              Agrega gestos fisicos con aldeanos de MCA: acariciar cabeza,
+              acariciar mejilla y abrazar, con animaciones sincronizadas.
+            </p>
             <dl class="details">
               <div>
                 <dt>Mod ID</dt>
@@ -138,8 +146,23 @@
                 <dt data-i18n="common.version">Version</dt>
                 <dd>0.1</dd>
               </div>
+              <div>
+                <dt>Loader</dt>
+                <dd>Forge 47.x</dd>
+              </div>
+              <div>
+                <dt>Minecraft</dt>
+                <dd>1.20.1</dd>
+              </div>
             </dl>
-            <p class="coming-note" data-i18n="mods.expressions.soon">Proximamente...</p>
+            <ul class="check-list">
+              <li data-i18n="mods.expressions.fact1">Tres expresiones: acariciar cabeza, acariciar mejilla y abrazar.</li>
+              <li data-i18n="mods.expressions.fact2">Requisitos por corazones, limite de usos, pausas y control de distancia.</li>
+              <li data-i18n="mods.expressions.fact3">Dialogos por personalidad, familia y compatibilidad opcional con MCA Social Expansion.</li>
+            </ul>
+            <div class="card-actions">
+              <a class="button button-secondary" href="#expressions" data-i18n="mods.expressions.viewDetails">Ver detalles</a>
+            </div>
           </article>
         </div>
       </section>
@@ -335,11 +358,101 @@
         </div>
       </section>
 
-      <section class="section expressions-coming" id="expressions">
+      <section class="section expressions-section" id="expressions">
         <div class="section-heading">
           <p class="eyebrow">MCA Expressions</p>
-          <h2 data-i18n="expressions.title">MCA Expressions</h2>
-          <p class="coming-title" data-i18n="expressions.soon">Proximamente...</p>
+          <h2 data-i18n="expressions.title">MCA Expressions v0.1</h2>
+          <p data-i18n="expressions.text">
+            Version inicial centrada en gestos fisicos entre el jugador y los aldeanos de MCA,
+            con respuestas de aceptacion o rechazo segun la relacion.
+          </p>
+        </div>
+
+        <div class="system-grid">
+          <article class="mini-card">
+            <span>50 / 75</span>
+            <h3 data-i18n="expressions.headPat.title">Acariciar cabeza</h3>
+            <p data-i18n="expressions.headPat.text">Gesto de confianza media con recompensa de corazones y animacion de rechazo si el NPC no acepta.</p>
+          </article>
+          <article class="mini-card">
+            <span>65 / 90</span>
+            <h3 data-i18n="expressions.caress.title">Acariciar mejilla</h3>
+            <p data-i18n="expressions.caress.text">Gesto mas cercano con animaciones separadas para aldeanos masculinos y femeninos.</p>
+          </article>
+          <article class="mini-card">
+            <span>20 / 85</span>
+            <h3 data-i18n="expressions.hug.title">Abrazar</h3>
+            <p data-i18n="expressions.hug.text">Abrazo sincronizado con acercamiento fisico; solo disponible para aldeanos adultos compatibles.</p>
+          </article>
+        </div>
+
+        <article class="table-card">
+          <div class="table-heading">
+            <h3 data-i18n="expressions.rules.title">Reglas de uso</h3>
+            <p data-i18n="expressions.rules.text">Los valores usan corazones de MCA y cada par jugador-aldeano lleva su propia ventana de uso.</p>
+          </div>
+          <div class="responsive-table">
+            <table>
+              <thead>
+                <tr>
+                  <th data-i18n="expressions.table.expression">Expresion</th>
+                  <th data-i18n="expressions.table.required">Requisito</th>
+                  <th data-i18n="expressions.table.high">Relacion alta</th>
+                  <th data-i18n="expressions.table.reward">Recompensa</th>
+                  <th data-i18n="expressions.table.usage">Uso y pausa</th>
+                  <th data-i18n="expressions.table.distance">Distancia</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-i18n="expressions.headPat.name">Acariciar cabeza</td>
+                  <td data-i18n="expressions.headPat.required">50 corazones</td>
+                  <td data-i18n="expressions.headPat.high">75 corazones</td>
+                  <td data-i18n="expressions.headPat.reward">+7 primera vez, +5 segunda vez</td>
+                  <td data-i18n="expressions.headPat.usage">2 usos con recompensa cada 10 min; pausa de 5 min al saturar</td>
+                  <td data-i18n="expressions.headPat.distance">2.8 inicio / 3.35 continuidad</td>
+                </tr>
+                <tr>
+                  <td data-i18n="expressions.caress.name">Acariciar mejilla</td>
+                  <td data-i18n="expressions.caress.required">65 corazones</td>
+                  <td data-i18n="expressions.caress.high">90 corazones</td>
+                  <td data-i18n="expressions.caress.reward">+9 primera vez, +6 segunda vez</td>
+                  <td data-i18n="expressions.caress.usage">2 usos con recompensa cada 15 min; pausa de 7 min al saturar</td>
+                  <td data-i18n="expressions.caress.distance">2.65 inicio / 3.1 continuidad</td>
+                </tr>
+                <tr>
+                  <td data-i18n="expressions.hug.name">Abrazar</td>
+                  <td data-i18n="expressions.hug.required">20 corazones</td>
+                  <td data-i18n="expressions.hug.high">85 corazones</td>
+                  <td data-i18n="expressions.hug.reward">+8 primera vez, +5 segunda vez</td>
+                  <td data-i18n="expressions.hug.usage">2 usos con recompensa cada 12 min; pausa de 6 min al saturar</td>
+                  <td data-i18n="expressions.hug.distance">2.8 inicio / 3.35 continuidad</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <div class="split-grid">
+          <article class="card">
+            <h3 data-i18n="expressions.flow.title">Flujo en el juego</h3>
+            <div class="info-list">
+              <div><strong data-i18n="expressions.flow.menu.name">Boton Expressions</strong><span data-i18n="expressions.flow.menu.value">Menu MCA</span><p data-i18n="expressions.flow.menu.text">Se agrega a la pantalla de interaccion del aldeano y abre una seleccion propia.</p></div>
+              <div><strong data-i18n="expressions.flow.screen.name">Pantalla de gestos</strong><span data-i18n="expressions.flow.screen.value">Corazones visibles</span><p data-i18n="expressions.flow.screen.text">Muestra los corazones actuales y bloquea opciones cuando faltan requisitos.</p></div>
+              <div><strong data-i18n="expressions.flow.chat.name">Dialogo</strong><span data-i18n="expressions.flow.chat.value">Jugador + NPC</span><p data-i18n="expressions.flow.chat.text">El jugador pide permiso, el NPC responde y al final aparece una linea de cierre.</p></div>
+              <div><strong data-i18n="expressions.flow.feedback.name">Feedback</strong><span data-i18n="expressions.flow.feedback.value">Sonidos y particulas</span><p data-i18n="expressions.flow.feedback.text">Usa sonidos de conversacion y particulas de corazones o aldeano feliz al completar.</p></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3 data-i18n="expressions.compat.title">Compatibilidad y limites</h3>
+            <div class="info-list">
+              <div><strong>MCA Reborn</strong><span>7.7.1-alpha.1+</span><p data-i18n="expressions.compat.mca">Dependencia obligatoria para aldeanos, corazones, personalidad y familia.</p></div>
+              <div><strong>Architectury</strong><span>9.2.14+</span><p data-i18n="expressions.compat.architectury">Dependencia obligatoria declarada por el mod para Forge 1.20.1.</p></div>
+              <div><strong>MCA Social Expansion</strong><span>0.7+</span><p data-i18n="expressions.compat.social">Integracion opcional: si esta instalado, usa sus personalidades sociales para variar dialogos.</p></div>
+              <div><strong data-i18n="expressions.compat.limits.name">Restricciones</strong><span data-i18n="expressions.compat.limits.value">Edad / dwarfism</span><p data-i18n="expressions.compat.limits.text">Las animaciones no aplican a bebes; el abrazo es solo para adultos y aun no esta adaptado a dwarfism.</p></div>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -410,7 +523,7 @@
           <div><strong>Forge</strong><span>47.x</span></div>
           <div><strong>MCA Reborn</strong><span data-i18n="install.mca">7.7.1-alpha.1 o superior</span></div>
           <div><strong>Architectury</strong><span data-i18n="install.architectury">9.2.14 o superior para MCA Expressions</span></div>
-          <div><strong data-i18n="install.optional">Integraciones opcionales</strong><span>MCA Quests 1.1.0, MCA Conversations 1.0.0, Townstead 0.7.6</span></div>
+          <div><strong data-i18n="install.optional">Integraciones opcionales</strong><span data-i18n="install.optionalList">MCA Social Expansion 0.7+ para MCA Expressions, MCA Quests 1.1.0, MCA Conversations 1.0.0, Townstead 0.7.6</span></div>
         </div>
       </section>
     </main>
