@@ -780,6 +780,7 @@ html[data-theme="dark"] .tag-rose {
 .humor-grid span {
   color: var(--gold);
   font-weight: 850;
+  overflow-wrap: anywhere;
 }
 
 .info-list p {
