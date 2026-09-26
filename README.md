@@ -17,6 +17,6 @@ Abre `index.html` en el navegador o publica la carpeta completa con GitHub Pages
 
 - Fichas rapidas de ambos mods.
 - Bloque de MCA Social Expansion con interfaces, sistemas, acciones sociales, regalos 0.8, Conocer y recetas.
-- Seccion de MCA Expressions v0.1 con ficha tecnica, gestos, reglas de uso y compatibilidad.
+- Seccion de MCA Expressions v0.2 con cinco gestos, variantes contextuales, reglas de uso y compatibilidad.
 - Selector de idioma español/ingles.
 - Modo claro/oscuro seleccionable.

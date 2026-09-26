@@ -10,7 +10,7 @@
     <title>_XavierCodes_ Mod's Wiki</title>
     <link rel="icon" href="assets/smartphone.png">
     <link rel="stylesheet" href="styles.css?v=10">
-    <script src="script.js?v=8" defer></script>
+    <script src="script.js?v=9" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -131,8 +131,8 @@
             </div>
             <h3>MCA Expressions</h3>
             <p data-i18n="mods.expressions.description">
-              Agrega gestos fisicos con aldeanos de MCA: acariciar cabeza,
-              acariciar mejilla y abrazar, con animaciones sincronizadas.
+              Agrega cinco gestos fisicos con aldeanos de MCA, animaciones sincronizadas
+              y respuestas que cambian segun la edad, la familia y la relacion.
             </p>
             <dl class="details">
               <div>
@@ -141,7 +141,7 @@
               </div>
               <div>
                 <dt data-i18n="common.version">Version</dt>
-                <dd>0.1</dd>
+                <dd>0.2</dd>
               </div>
               <div>
                 <dt>Loader</dt>
@@ -153,9 +153,9 @@
               </div>
             </dl>
             <ul class="check-list">
-              <li data-i18n="mods.expressions.fact1">Tres expresiones: acariciar cabeza, acariciar mejilla y abrazar.</li>
-              <li data-i18n="mods.expressions.fact2">Requisitos por corazones, limite de usos, pausas y control de distancia.</li>
-              <li data-i18n="mods.expressions.fact3">Dialogos por personalidad, familia y compatibilidad opcional con MCA Social Expansion.</li>
+              <li data-i18n="mods.expressions.fact1">Cinco expresiones: acariciar cabeza y mejilla, abrazar, besar la mejilla y tomar de la mano.</li>
+              <li data-i18n="mods.expressions.fact2">Variantes adaptadas a niños, familiares, parejas, personalidades reservadas y adultos con enanismo.</li>
+              <li data-i18n="mods.expressions.fact3">Dialogos contextuales, camara libre, control de distancia y compatibilidad opcional con MCA Social Expansion.</li>
             </ul>
             <div class="card-actions">
               <a class="button button-primary" href="https://www.curseforge.com/minecraft/mc-mods/mca-expressions" target="_blank" rel="noopener noreferrer" data-i18n="mods.expressions.viewMod">Ver mod</a>
@@ -500,10 +500,10 @@
       <section class="section expressions-section" id="expressions">
         <div class="section-heading">
           <p class="eyebrow">MCA Expressions</p>
-          <h2 data-i18n="expressions.title">MCA Expressions v0.1</h2>
+          <h2 data-i18n="expressions.title">MCA Expressions v0.2</h2>
           <p data-i18n="expressions.text">
-            Version inicial centrada en gestos fisicos entre el jugador y los aldeanos de MCA,
-            con respuestas de aceptacion o rechazo segun la relacion.
+            Cinco gestos fisicos con animaciones sincronizadas y dialogos que reconocen
+            la edad, la familia, la relacion y la personalidad del aldeano.
           </p>
         </div>
 
@@ -521,7 +521,17 @@
           <article class="mini-card">
             <span>20 / 85</span>
             <h3 data-i18n="expressions.hug.title">Abrazar</h3>
-            <p data-i18n="expressions.hug.text">Abrazo sincronizado con acercamiento fisico; solo disponible para aldeanos adultos compatibles.</p>
+            <p data-i18n="expressions.hug.text">Abrazo sincronizado con variantes automaticas para adultos, niños y aldeanos adultos con enanismo.</p>
+          </article>
+          <article class="mini-card">
+            <span>50 - 95</span>
+            <h3 data-i18n="expressions.cheekKiss.title">Besar la mejilla</h3>
+            <p data-i18n="expressions.cheekKiss.text">Beso de seis segundos para adultos y variante infantil de ocho segundos con una caricia en la cabeza.</p>
+          </article>
+          <article class="mini-card">
+            <span>20 / 50 / 80</span>
+            <h3 data-i18n="expressions.holdHands.title">Tomar de la mano</h3>
+            <p data-i18n="expressions.holdHands.text">Gesto de seis segundos con variantes para familia, pareja, personalidad reservada y rechazo.</p>
           </article>
         </div>
 
@@ -567,6 +577,22 @@
                   <td data-i18n="expressions.hug.usage">2 usos con recompensa cada 12 min; pausa de 6 min al saturar</td>
                   <td data-i18n="expressions.hug.distance">2.8 inicio / 3.35 continuidad</td>
                 </tr>
+                <tr>
+                  <td data-i18n="expressions.cheekKiss.name">Besar la mejilla</td>
+                  <td data-i18n="expressions.cheekKiss.required">80 adultos; 50 hijos; 95 otros niños</td>
+                  <td data-i18n="expressions.cheekKiss.high">95 adultos; 75 hijos; 100 otros niños</td>
+                  <td data-i18n="expressions.cheekKiss.reward">+9 primera vez, +6 segunda vez</td>
+                  <td data-i18n="expressions.cheekKiss.usage">2 usos con recompensa cada 15 min; pausa de 7 min al saturar</td>
+                  <td data-i18n="expressions.cheekKiss.distance">2.8 inicio / 3.35 continuidad</td>
+                </tr>
+                <tr>
+                  <td data-i18n="expressions.holdHands.name">Tomar de la mano</td>
+                  <td data-i18n="expressions.holdHands.required">20 familia; 50 pareja; 80 otros</td>
+                  <td data-i18n="expressions.holdHands.high">95 corazones</td>
+                  <td data-i18n="expressions.holdHands.reward">+7 primera vez, +5 segunda vez</td>
+                  <td data-i18n="expressions.holdHands.usage">2 usos con recompensa cada 12 min; pausa de 6 min al saturar</td>
+                  <td data-i18n="expressions.holdHands.distance">2.8 inicio / 3.35 continuidad</td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -578,8 +604,8 @@
             <div class="info-list">
               <div><strong data-i18n="expressions.flow.menu.name">Boton Expressions</strong><span data-i18n="expressions.flow.menu.value">Menu MCA</span><p data-i18n="expressions.flow.menu.text">Se agrega a la pantalla de interaccion del aldeano y abre una seleccion propia.</p></div>
               <div><strong data-i18n="expressions.flow.screen.name">Pantalla de gestos</strong><span data-i18n="expressions.flow.screen.value">Corazones visibles</span><p data-i18n="expressions.flow.screen.text">Muestra los corazones actuales y bloquea opciones cuando faltan requisitos.</p></div>
-              <div><strong data-i18n="expressions.flow.chat.name">Dialogo</strong><span data-i18n="expressions.flow.chat.value">Jugador + NPC</span><p data-i18n="expressions.flow.chat.text">El jugador pide permiso, el NPC responde y al final aparece una linea de cierre.</p></div>
-              <div><strong data-i18n="expressions.flow.feedback.name">Feedback</strong><span data-i18n="expressions.flow.feedback.value">Sonidos y particulas</span><p data-i18n="expressions.flow.feedback.text">Usa sonidos de conversacion y particulas de corazones o aldeano feliz al completar.</p></div>
+              <div><strong data-i18n="expressions.flow.chat.name">Dialogo</strong><span data-i18n="expressions.flow.chat.value">Jugador + NPC</span><p data-i18n="expressions.flow.chat.text">Las peticiones, respuestas y cierres cambian segun edad, familia, relacion y personalidad.</p></div>
+              <div><strong data-i18n="expressions.flow.feedback.name">Feedback</strong><span data-i18n="expressions.flow.feedback.value">Sonidos y particulas</span><p data-i18n="expressions.flow.feedback.text">Incluye sonido de beso, sonidos de conversacion y particulas al completar el gesto.</p></div>
             </div>
           </article>
 
@@ -589,7 +615,7 @@
               <div><strong>MCA Reborn</strong><span>7.7.1-alpha.1+</span><p data-i18n="expressions.compat.mca">Dependencia obligatoria para aldeanos, corazones, personalidad y familia.</p></div>
               <div><strong>Architectury</strong><span>9.2.14+</span><p data-i18n="expressions.compat.architectury">Dependencia obligatoria declarada por el mod para Forge 1.20.1.</p></div>
               <div><strong>MCA Social Expansion</strong><span>0.7+</span><p data-i18n="expressions.compat.social">Integracion opcional: si esta instalado, usa sus personalidades sociales para variar dialogos.</p></div>
-              <div><strong data-i18n="expressions.compat.limits.name">Restricciones</strong><span data-i18n="expressions.compat.limits.value">Edad / dwarfism</span><p data-i18n="expressions.compat.limits.text">Las animaciones no aplican a bebes; el abrazo es solo para adultos y aun no esta adaptado a dwarfism.</p></div>
+              <div><strong data-i18n="expressions.compat.limits.name">Restricciones</strong><span data-i18n="expressions.compat.limits.value">Edad y relacion</span><p data-i18n="expressions.compat.limits.text">Los bebes no participan; el beso en la mejilla excluye adolescentes y cada gesto conserva sus requisitos de corazones.</p></div>
             </div>
           </article>
         </div>
