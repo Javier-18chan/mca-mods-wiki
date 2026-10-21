@@ -549,10 +549,13 @@ html[data-theme="dark"] .theme-icon::after {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.interface-grid,
-.system-grid,
-.recipe-grid {
+.system-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.interface-grid,
+.recipe-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .card,
@@ -725,6 +728,14 @@ html[data-theme="dark"] .tag-rose {
   filter: drop-shadow(0 14px 18px rgb(24 45 78 / 18%));
 }
 
+.mirror-preview {
+  width: 126px;
+  aspect-ratio: 167 / 289;
+  background: url("assets/magic-mirror-ui.png") top left / 306.587% auto no-repeat;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 14px 18px rgb(24 45 78 / 18%));
+}
+
 .item-preview {
   position: absolute;
   right: 18px;
@@ -785,6 +796,11 @@ html[data-theme="dark"] .tag-rose {
 
 .info-list p {
   font-size: 0.92rem;
+}
+
+#mensajes .info-list div {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 6px;
 }
 
 .table-card {
@@ -903,6 +919,33 @@ tbody tr:last-child td {
   background: var(--surface-strong);
   image-rendering: pixelated;
   padding: 10px;
+}
+
+.crafting-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
+  grid-auto-rows: 48px;
+  gap: 4px;
+  width: max-content;
+  margin: 22px auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface-strong);
+  padding: 10px;
+}
+
+.crafting-grid img {
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--line);
+  background: var(--surface-muted);
+  image-rendering: pixelated;
+  padding: 7px;
+}
+
+.crafting-grid .glass-pane {
+  padding-right: 16px;
+  padding-left: 16px;
 }
 
 .compat-list {
