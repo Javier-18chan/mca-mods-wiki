@@ -749,6 +749,49 @@ html[data-theme="dark"] .tag-rose {
   padding: 20px;
 }
 
+.interface-card-wide {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+
+.interface-card-wide .interface-art {
+  min-height: 280px;
+  border-right: 1px solid var(--line);
+  border-bottom: 0;
+}
+
+.grimoire-preview {
+  width: min(86%, 320px);
+}
+
+.release-note {
+  margin-top: 22px;
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.release-details {
+  margin: 24px 0;
+  border-block: 1px solid var(--line);
+  padding: 16px 0;
+}
+
+.release-details summary {
+  color: var(--ink);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.release-details p {
+  max-width: 850px;
+  margin-top: 12px;
+  color: var(--text-soft);
+  line-height: 1.7;
+}
+
 .interface-copy p,
 .interface-copy ul {
   margin-top: 12px;
@@ -943,6 +986,13 @@ tbody tr:last-child td {
   padding: 7px;
 }
 
+.crafting-grid span {
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--line);
+  background: var(--surface-muted);
+}
+
 .crafting-grid .glass-pane {
   padding-right: 16px;
   padding-left: 16px;
@@ -1017,6 +1067,15 @@ tbody tr:last-child td {
 }
 
 @media (max-width: 680px) {
+  .interface-card-wide {
+    grid-template-columns: 1fr;
+  }
+
+  .interface-card-wide .interface-art {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
   .section {
     padding: 44px 18px;
   }
